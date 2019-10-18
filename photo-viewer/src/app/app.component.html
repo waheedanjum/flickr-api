@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">{{this.title}}</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div *ngIf="!hideAll" class="row text-center text-lg-left">
+    <div class="col-12" *ngFor="let p of photo">
+      <a href="#">
+        <div *ngIf="!p.isHidden">
+          <img id="{{p.id}}" class="img-thumbnail" (click)="onClick($event)" src="{{p.img_url}}" style="width:50%;">
+          <p>{{p.title}}</p>
+        </div>
+        <p>
+      </a>
+    </div>
+  </div>
+
+  <div id="fullScreen" *ngIf='hideAll'>
+
+  </div>
+
+</div>
+<router-outlet></router-outlet>
