@@ -1,3 +1,4 @@
 # Please clone the repository using Git Hub.
+# The application was written in Angular 8.
 # Go to cmd command prompt to the directory <drive>:\flickr-api\photo-viewer   and run npm install
 # run ng-serve -o and project will be running on http://localhost:4200
